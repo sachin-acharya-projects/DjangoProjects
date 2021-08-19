@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Allan&family=Anton&family=Courgette&family=Kalam&family=Kaushan+Script&family=Lobster&family=Lobster+Two:ital@0;1&family=Oswald&family=Pathway+Gothic+One&family=Playball&family=Righteous&family=Roboto&family=Squada+One&family=Teko&family=Trade+Winds&family=Yanone+Kaffeesatz&family=Yellowtail&display=swap');
+@font-face {font-family: 'BravAda-Arma-Regular';src:url('/fonts/BravAda-Arma-Regular.ttf.woff') format('woff'),url('/fonts/BravAda-Arma-Regular.ttf.svg#BravAda-Arma-Regular') format('svg'),url('/fonts/BravAda-Arma-Regular.ttf.eot'),url('/fonts/BravAda-Arma-Regular.ttf.eot?#iefix') format('embedded-opentype'); font-weight: normal;font-style: normal;}
+$bravAda: 'BravAda-Arma-Regular';
+$allan: 'Allan', cursive;// Itallic Long
+$anton: 'Anton', sans-serif;
+$courgette: 'Courgette', cursive;
+$kallam: 'Kalam', cursive;
+$kaushan: 'Kaushan Script', cursive;
+$lobster: 'Lobster', cursive;
+$lobserTwo: 'Lobster Two', cursive;
+$ostwald: 'Oswald', sans-serif;
+$Pathway: 'Pathway Gothic One', sans-serif;
+$playball: 'Playball', cursive;
+$righteous: 'Righteous', cursive;
+$roboto: 'Roboto', sans-serif;
+$squada: 'Squada One', cursive;
+$teko: 'Teko', sans-serif;
+$tradeWinds: 'Trade Winds', cursive;
+$yanone: 'Yanone Kaffeesatz', sans-serif;
+$yellow: 'Yellowtail', cursive;
+//Basic Formating
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background: url('../assets/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1{
+    font-size: 100px;
+    font-family: $tradeWinds;
+    color: transparent;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width:  2px;
+    text-shadow: 0 0 20px #000;
+}
+
+p{
+    font-size: 25px;
+    font-family: $lobserTwo;
+    color: white;
+    text-shadow: 0 0 20px #000;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 100px;
+    left: 45%;
+    transform: translateX(-60%);
+    height: 40px;
+    width: 120px;
+    border: 20px solid transparent;
+    border-bottom: 10px solid white;
+    border-left: 10px solid white;
+    transform: rotate(-45deg);
+    padding: 10px;
+
+    div{
+        height: 100%;
+        width: 100%;
+        border: 10px solid transparent;
+        border-bottom: 10px solid white;
+        border-left: 10px solid white;
+        padding: 10px;
+
+        div{
+            height: 100%;
+            width: 100%;
+            border: 10px solid transparent;
+            border-bottom: 10px solid white;
+            border-left: 10px solid white;
+        }
+    }
+}

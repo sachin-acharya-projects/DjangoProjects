@@ -1,0 +1,33 @@
+{% extends 'tuts/basic.html' %}
+{% block title %}ENGINEERS | HOME{%endblock%}
+{% block css %}
+img{
+height: 300px;
+}
+{%endblock%}
+{%block homeHightlight%}<span class="sr-only">(current)</span>{%endblock%}
+{%block body%}
+<h1 style="text-align:center;font-size: 30px;padding: 10px;color: #212529;font-weight: bold;letter-spacing: -3px;">ENGINEERS LIST</h1>
+<hr>
+    <div class="container" style="display: flex;justify-content: center;align-items: center;flex-wrap: wrap;">
+        {% for i in engineer %}
+        <div class="card" style="width: 19rem;height: 38rem;margin: 10px;">
+        <img src="media/{{i.profile_pic}}" class="card-img-top" alt="{{i.name}}">
+        <div class="card-body">
+        <h5 class="card-title">{{i.name}}</h5>
+        <p class="card-text" style="font-weight: bold;">Salary: RS {{i.salary}}</p>
+        <p class="card-text" style="margin-top: -10px;">{{i.details}}</p>
+
+        <a href="#" class="btn btn-primary">View More</a>
+        </div>
+        </div>
+
+        {%endfor%}
+    </div>
+
+{%endblock%}
+
+<!--HOW TO LOAD STAIC FILES IN DJANGO PROJECT
+    {% load static %}
+    <a href="{%static 'tuts/style.css'%}">Click Me</a>
+-->

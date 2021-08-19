@@ -1,0 +1,5 @@
+# All your ignored project lies here
+
+# Excluding Folder/Script
+__pycache__
+# Excluding Projects
