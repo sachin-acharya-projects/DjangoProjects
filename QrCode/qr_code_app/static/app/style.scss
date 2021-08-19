@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Allan&family=Anton&family=Courgette&family=Kalam&family=Kaushan+Script&family=Lobster&family=Lobster+Two:ital@0;1&family=Oswald&family=Pathway+Gothic+One&family=Playball&family=Righteous&family=Roboto&family=Squada+One&family=Teko&family=Trade+Winds&family=Yanone+Kaffeesatz&family=Yellowtail&display=swap');
+$allan: 'Allan', cursive;// Itallic Long
+$anton: 'Anton', sans-serif;
+$courgette: 'Courgette', cursive;
+$kallam: 'Kalam', cursive;
+$kaushan: 'Kaushan Script', cursive;
+$lobster: 'Lobster', cursive;
+$lobserTwo: 'Lobster Two', cursive;
+$ostwald: 'Oswald', sans-serif;
+$Pathway: 'Pathway Gothic One', sans-serif;
+$playball: 'Playball', cursive;
+$righteous: 'Righteous', cursive;
+$roboto: 'Roboto', sans-serif;
+$squada: 'Squada One', cursive;
+$teko: 'Teko', sans-serif;
+$tradeWinds: 'Trade Winds', cursive;
+$yanone: 'Yanone Kaffeesatz', sans-serif;
+$yellow: 'Yellowtail', cursive;
+//Basic Formating
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.container{
+    padding: 30px;
+    width: 500px;
+    height: 300px;
+
+    h1{
+        color: white;
+        font-family: $kallam;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    div{
+        padding: 10px;
+        width: 100%;
+        margin: 10px 0px;
+
+        input{
+            width: 100%;
+            padding: 5px 0px;
+            background: none;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid rgb(55, 16, 99);
+            font-family: $roboto;
+            font-size: 14px;
+            color: white;
+            padding-left: 5px;
+            transition: 0.3s all linear;
+
+            &:focus{
+                transform: translateY(-2px);
+            }
+        }
+
+        .send{
+            border: 2px solid rgb(53, 13, 99);
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s all linear;
+
+            &:hover{
+                transform: translateY(-2px);
+                box-shadow: 0 0 20px #fff,
+                0 0 50px #fff;
+            }
+        }
+    }
+}
+
+a{
+    font-family: $kallam;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
